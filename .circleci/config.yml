@@ -40,11 +40,11 @@ workflows:
  version: 2
  Example_Workflow:
    jobs:
-     - Hello-World
+     - Hello-World:
         filters:
           branches:
             only:
-              - master
+              - main
      - I-Have-Code:
          requires:
            - Hello-World
